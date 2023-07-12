@@ -1,4 +1,4 @@
-package com.felipe.DsList.entities;
+package com.felipe.DsList.Entities;
 
 import java.util.Objects;
 

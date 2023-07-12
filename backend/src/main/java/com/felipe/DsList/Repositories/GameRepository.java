@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import com.felipe.DsList.Entities.Game;
 import com.felipe.DsList.Projections.GameMinProjection;
-import com.felipe.DsList.entities.Game;
 
 public interface GameRepository extends JpaRepository<Game, Long>{
 	@Query(nativeQuery = true, value = """

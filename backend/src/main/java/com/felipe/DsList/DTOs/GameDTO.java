@@ -2,7 +2,7 @@ package com.felipe.DsList.DTOs;
 
 import org.springframework.beans.BeanUtils;
 
-import com.felipe.DsList.entities.Game;
+import com.felipe.DsList.Entities.Game;
 
 public class GameDTO {
 	private Long id;

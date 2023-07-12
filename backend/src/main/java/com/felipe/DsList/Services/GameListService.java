@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.felipe.DsList.DTOs.GameListDTO;
+import com.felipe.DsList.Entities.GameList;
 import com.felipe.DsList.Projections.GameMinProjection;
 import com.felipe.DsList.Repositories.GameListRepository;
 import com.felipe.DsList.Repositories.GameRepository;
-import com.felipe.DsList.entities.GameList;
 
 @Service
 public class GameListService {

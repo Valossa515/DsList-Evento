@@ -1,6 +1,6 @@
 package com.felipe.DsList.DTOs;
 
-import com.felipe.DsList.entities.GameList;
+import com.felipe.DsList.Entities.GameList;
 
 public class GameListDTO {
 	private Long id;

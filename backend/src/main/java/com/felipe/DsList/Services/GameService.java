@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.felipe.DsList.DTOs.GameDTO;
 import com.felipe.DsList.DTOs.GameMinDTO;
+import com.felipe.DsList.Entities.Game;
 import com.felipe.DsList.Projections.GameMinProjection;
 import com.felipe.DsList.Repositories.GameRepository;
-import com.felipe.DsList.entities.Game;
 
 @Service
 public class GameService {

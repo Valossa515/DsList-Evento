@@ -1,7 +1,7 @@
 package com.felipe.DsList.DTOs;
 
+import com.felipe.DsList.Entities.Game;
 import com.felipe.DsList.Projections.GameMinProjection;
-import com.felipe.DsList.entities.Game;
 
 public class GameMinDTO {
 	private Long id;
