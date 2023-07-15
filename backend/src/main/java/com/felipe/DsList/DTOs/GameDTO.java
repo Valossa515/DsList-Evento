@@ -15,6 +15,10 @@ public class GameDTO {
 	private String shortDescription;
 	private String longDescription;
 	
+	public GameDTO() {
+        // Construtor vazio
+    }
+	
 	public GameDTO(Game entity) {
 		BeanUtils.copyProperties(entity, this);
 	}
