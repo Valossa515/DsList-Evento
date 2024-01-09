@@ -19,6 +19,19 @@ public class GameDTO {
         // Construtor vazio
     }
 	
+	public GameDTO(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl, String shortDescription, String longDescription) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.genre = genre;
+        this.platforms = platforms;
+        this.score = score;
+        this.imgUrl = imgUrl;
+        this.shortDescription = shortDescription;
+        this.longDescription = longDescription;
+    }
+
+	
 	public GameDTO(Game entity) {
 		BeanUtils.copyProperties(entity, this);
 	}

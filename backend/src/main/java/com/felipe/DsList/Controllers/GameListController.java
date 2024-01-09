@@ -19,26 +19,26 @@ import com.felipe.DsList.Services.GameService;
 @RestController
 @RequestMapping(value = "/lists")
 public class GameListController {
-	@Autowired
-	private GameListService gameListService;
-	
-	@Autowired
-	private GameService gameService;
+    @Autowired
+    private GameListService gameListService;
 
-	@GetMapping
-	public List<GameListDTO> findAll() {
-		List<GameListDTO> result = gameListService.findAll();
-		return result;
-	}
+    @Autowired
+    private GameService gameService;
 
-	@GetMapping(value = "/{listId}/games")
-	public List<GameMinDTO> findGames(@PathVariable Long listId) {
-		List<GameMinDTO> result = gameService.findByGameList(listId);
-		return result;
-	}
-	
-	@PostMapping(value = "/{listId}/replacement")
-	public void move(@PathVariable Long listId, @RequestBody ReplacementDTO body) {
-		gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
-	}
+    @GetMapping
+    public List<GameListDTO> findAll() {
+        List<GameListDTO> result = gameListService.findAll();
+        return result;
+    }
+
+    @GetMapping(value = "/{listId}/games") // <- Nome do parâmetro alterado para "id"
+    public List<GameMinDTO> findGames(@PathVariable Long listId) { // <- Parâmetro com o nome "listId"
+        List<GameMinDTO> result = gameService.findByGameList(listId);
+        return result;
+    }
+
+    @PostMapping(value = "/{listId}/replacement") // <- Nome do parâmetro alterado para "id"
+    public void move(@PathVariable Long listId, @RequestBody ReplacementDTO body) { // <- Parâmetro com o nome "listId"
+        gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
+    }
 }
